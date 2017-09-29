@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using SchoolRegistry.Models;
 
 namespace SchoolRegistry
 {
@@ -18,6 +20,9 @@ namespace SchoolRegistry
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddDbContext<SchoolRegistryContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("SchoolRegistryContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
