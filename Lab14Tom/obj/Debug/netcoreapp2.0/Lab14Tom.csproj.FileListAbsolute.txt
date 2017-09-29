@@ -1,0 +1,11 @@
+C:\Users\Tom\source\repos\Lab14-Model-Validation\Lab14Tom\bin\Debug\netcoreapp2.0\Lab14Tom.deps.json
+C:\Users\Tom\source\repos\Lab14-Model-Validation\Lab14Tom\bin\Debug\netcoreapp2.0\Lab14Tom.runtimeconfig.json
+C:\Users\Tom\source\repos\Lab14-Model-Validation\Lab14Tom\bin\Debug\netcoreapp2.0\Lab14Tom.runtimeconfig.dev.json
+C:\Users\Tom\source\repos\Lab14-Model-Validation\Lab14Tom\bin\Debug\netcoreapp2.0\Lab14Tom.dll
+C:\Users\Tom\source\repos\Lab14-Model-Validation\Lab14Tom\obj\Debug\netcoreapp2.0\Lab14Tom.csprojResolveAssemblyReference.cache
+C:\Users\Tom\source\repos\Lab14-Model-Validation\Lab14Tom\obj\Debug\netcoreapp2.0\Lab14Tom.csproj.CoreCompileInputs.cache
+C:\Users\Tom\source\repos\Lab14-Model-Validation\Lab14Tom\obj\Debug\netcoreapp2.0\Lab14Tom.AssemblyInfoInputs.cache
+C:\Users\Tom\source\repos\Lab14-Model-Validation\Lab14Tom\obj\Debug\netcoreapp2.0\Lab14Tom.AssemblyInfo.cs
+C:\Users\Tom\source\repos\Lab14-Model-Validation\Lab14Tom\bin\Debug\netcoreapp2.0\Lab14Tom.pdb
+C:\Users\Tom\source\repos\Lab14-Model-Validation\Lab14Tom\obj\Debug\netcoreapp2.0\Lab14Tom.dll
+C:\Users\Tom\source\repos\Lab14-Model-Validation\Lab14Tom\obj\Debug\netcoreapp2.0\Lab14Tom.pdb
