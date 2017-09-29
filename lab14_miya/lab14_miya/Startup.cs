@@ -14,6 +14,7 @@ namespace lab14_miya
 {
     public class Startup
     {
+        //adding a Startup constructor that requires a configuration of type IConfiguration
         public IConfiguration Configuration
         {
             get;

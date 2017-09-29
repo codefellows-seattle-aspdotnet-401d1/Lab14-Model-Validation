@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,6 +12,7 @@ namespace lab14_miya.Models
         {
             get; set;
         }
+        [Required]
         public string Name
         {
             get; set;
@@ -24,6 +26,11 @@ namespace lab14_miya.Models
             get; set;
         }
         public string Talent
+        {
+            get; set;
+        }
+        [Display(Name="Favorite Subject")]
+        public string FavoriteClass
         {
             get; set;
         }

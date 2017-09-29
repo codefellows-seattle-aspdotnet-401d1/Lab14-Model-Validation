@@ -2,10 +2,26 @@
 @{
     ViewData["Title"] = "Index";
 }
+<head>
+    <link href="~/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+
 <h2>Index</h2>
+
+@*add a new field to register model here*@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<form asp-controller="Registers" asp-action="Index">
+<p>
+    Search: <input type="text" name="SearchString" />
+    <input type="submit" value="filter" />
+</p>
+</form>
+
+
+
 <table class="table">
     <thead>
         <tr>
@@ -21,7 +37,8 @@
             <th>
                 @Html.DisplayNameFor(model => model.Talent)
             </th>
-            <th></th>
+            <th>@Html.DisplayNameFor(model => model.FavoriteClass)
+</th>
         </tr>
     </thead>
     <tbody>
@@ -39,6 +56,9 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Talent)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FavoriteClass)
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |

@@ -19,9 +19,18 @@ namespace lab14_miya.Controllers
         }
 
         // GET: Registers
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
+            //adding a search functionality to look through students 
         {
-            return View(await _context.Register.ToListAsync());
+            var students = from s in _context.Register
+                           select s;
+
+            if(!string.IsNullOrEmpty(searchString))
+            {
+                students = students.Where(s =>
+                s.Name.Contains(searchString));
+            }
+            return View(await students.ToListAsync());
         }
 
         // GET: Registers/Details/5
@@ -53,7 +62,7 @@ namespace lab14_miya.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Age,Grade,Talent")] Register register)
+        public async Task<IActionResult> Create([Bind("ID,Name,Age,Grade,Talent,FavoriteClass")] Register register)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +94,7 @@ namespace lab14_miya.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Age,Grade,Talent")] Register register)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Age,Grade,Talent,FavoriteClass")] Register register)
         {
             if (id != register.ID)
             {
