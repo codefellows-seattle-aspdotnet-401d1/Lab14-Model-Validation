@@ -1,0 +1,17 @@
+﻿.form-group {
+    font-size: 30px;
+    margin-left: 10%;
+    margin-bottom: 25px;
+}
+
+input {
+    padding-left: 5px;
+    font-size: 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn btn-default {
+    margin-top: 10px;
+}
+
