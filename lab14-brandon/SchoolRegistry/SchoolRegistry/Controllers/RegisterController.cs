@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SchoolRegistry.Models;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -20,12 +21,13 @@ namespace SchoolRegistry.Controllers
         {
             var students = from s in _context.Student
                            select s;
-            if (!string.IsNullOrEmpty(searchString))
+
+            if (!String.IsNullOrEmpty(searchString))
             {
                 students = students.Where(s => s.Name.Contains(searchString));
             }
 
-            return View(await _context.Student.ToListAsync());
+            return View(await students.ToListAsync());
         }
 
         // GET: Register/Details/5
