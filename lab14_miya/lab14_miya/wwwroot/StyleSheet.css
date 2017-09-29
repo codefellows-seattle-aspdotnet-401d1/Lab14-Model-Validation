@@ -1,0 +1,14 @@
+﻿body {
+    background-color: aqua;
+}
+
+hgroup {
+    border-style: solid;
+    opacity: 0.9;
+    background-color: darkcyan;
+    font: 15px bold Georgia, serif;
+}
+
+div {
+    margin: 0 auto;
+}

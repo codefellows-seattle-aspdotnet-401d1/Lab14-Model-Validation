@@ -1,0 +1,11 @@
+C:\Users\shami\Source\Repos\Lab14-Model-Validation\lab14_miya\lab14_miya\bin\Debug\netcoreapp2.0\lab14_miya.deps.json
+C:\Users\shami\Source\Repos\Lab14-Model-Validation\lab14_miya\lab14_miya\bin\Debug\netcoreapp2.0\lab14_miya.runtimeconfig.json
+C:\Users\shami\Source\Repos\Lab14-Model-Validation\lab14_miya\lab14_miya\bin\Debug\netcoreapp2.0\lab14_miya.runtimeconfig.dev.json
+C:\Users\shami\Source\Repos\Lab14-Model-Validation\lab14_miya\lab14_miya\bin\Debug\netcoreapp2.0\lab14_miya.dll
+C:\Users\shami\Source\Repos\Lab14-Model-Validation\lab14_miya\lab14_miya\obj\Debug\netcoreapp2.0\lab14_miya.csprojResolveAssemblyReference.cache
+C:\Users\shami\Source\Repos\Lab14-Model-Validation\lab14_miya\lab14_miya\obj\Debug\netcoreapp2.0\lab14_miya.csproj.CoreCompileInputs.cache
+C:\Users\shami\Source\Repos\Lab14-Model-Validation\lab14_miya\lab14_miya\obj\Debug\netcoreapp2.0\lab14_miya.AssemblyInfoInputs.cache
+C:\Users\shami\Source\Repos\Lab14-Model-Validation\lab14_miya\lab14_miya\obj\Debug\netcoreapp2.0\lab14_miya.AssemblyInfo.cs
+C:\Users\shami\Source\Repos\Lab14-Model-Validation\lab14_miya\lab14_miya\bin\Debug\netcoreapp2.0\lab14_miya.pdb
+C:\Users\shami\Source\Repos\Lab14-Model-Validation\lab14_miya\lab14_miya\obj\Debug\netcoreapp2.0\lab14_miya.dll
+C:\Users\shami\Source\Repos\Lab14-Model-Validation\lab14_miya\lab14_miya\obj\Debug\netcoreapp2.0\lab14_miya.pdb

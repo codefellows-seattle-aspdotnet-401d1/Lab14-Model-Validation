@@ -17,10 +17,11 @@ Building off of your project from the previous 3 classes:
 
 ## ReadMe
 - Your readme should include the following information:
-	- How long did it take you to complete this assignment?
-	- What did you struggle with? Why? How did you solve?
-	- What did you learn during this assignment?
-    - What resources did you utilize for this assingment?
+	- How long did it take you to complete this assignment? 3 hours
+	- What did you struggle with? Why? How did you solve? I struggled with accessing my Registers controller. I hard-wired a Registers route into my Index action and it turned out
+	that it was referring to an old localhost.
+	- What did you learn during this assignment? I learned that I can use asp-controller and asp-action attributes instead.
+    - What resources did you utilize for this assingment? my peers
 
 ## Rubric
 - 2pts: All three MVC components are present (build off from prev assignments)
