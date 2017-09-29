@@ -16,8 +16,15 @@ namespace SchoolRegistry.Controllers
         }
 
         // GET: Register
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+            var students = from s in _context.Student
+                           select s;
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                students = students.Where(s => s.Name.Contains(searchString));
+            }
+
             return View(await _context.Student.ToListAsync());
         }
 
