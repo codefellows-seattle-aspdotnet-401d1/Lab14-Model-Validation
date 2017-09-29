@@ -1,0 +1,71 @@
+﻿@model IEnumerable<lab14_miya.Models.Register>
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+    <link href="~/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<h2>Index</h2>
+
+@*add a new field to register model here*@
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="Registers" asp-action="Index">
+<p>
+    Search: <input type="text" name="SearchString" />
+    <input type="submit" value="filter" />
+</p>
+</form>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Talent)
+            </th>
+            <th>@Html.DisplayNameFor(model => model.FavoriteClass)
+</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Grade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Talent)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FavoriteClass)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
