@@ -12,19 +12,24 @@ namespace lab14_miya.Models
         {
             get; set;
         }
+        [StringLength(30, MinimumLength =1)]
         [Required]
         public string Name
         {
             get; set;
         }
+        [Range(1,130)]
+        [Required]
         public int Age
         {
             get; set;
         }
+        [Range(1,12)]
         public int Grade
         {
             get; set;
         }
+        [StringLength(30)]
         public string Talent
         {
             get; set;
