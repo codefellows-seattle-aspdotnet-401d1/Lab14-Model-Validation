@@ -1,0 +1,11 @@
+C:\Users\admin\codefellows\401\lab14ModelValidation\lab14Validation\lab14Validation\bin\Debug\netcoreapp2.0\lab14Validation.deps.json
+C:\Users\admin\codefellows\401\lab14ModelValidation\lab14Validation\lab14Validation\bin\Debug\netcoreapp2.0\lab14Validation.runtimeconfig.json
+C:\Users\admin\codefellows\401\lab14ModelValidation\lab14Validation\lab14Validation\bin\Debug\netcoreapp2.0\lab14Validation.runtimeconfig.dev.json
+C:\Users\admin\codefellows\401\lab14ModelValidation\lab14Validation\lab14Validation\bin\Debug\netcoreapp2.0\lab14Validation.dll
+C:\Users\admin\codefellows\401\lab14ModelValidation\lab14Validation\lab14Validation\obj\Debug\netcoreapp2.0\lab14Validation.csprojResolveAssemblyReference.cache
+C:\Users\admin\codefellows\401\lab14ModelValidation\lab14Validation\lab14Validation\obj\Debug\netcoreapp2.0\lab14Validation.csproj.CoreCompileInputs.cache
+C:\Users\admin\codefellows\401\lab14ModelValidation\lab14Validation\lab14Validation\obj\Debug\netcoreapp2.0\lab14Validation.AssemblyInfoInputs.cache
+C:\Users\admin\codefellows\401\lab14ModelValidation\lab14Validation\lab14Validation\obj\Debug\netcoreapp2.0\lab14Validation.AssemblyInfo.cs
+C:\Users\admin\codefellows\401\lab14ModelValidation\lab14Validation\lab14Validation\bin\Debug\netcoreapp2.0\lab14Validation.pdb
+C:\Users\admin\codefellows\401\lab14ModelValidation\lab14Validation\lab14Validation\obj\Debug\netcoreapp2.0\lab14Validation.dll
+C:\Users\admin\codefellows\401\lab14ModelValidation\lab14Validation\lab14Validation\obj\Debug\netcoreapp2.0\lab14Validation.pdb
