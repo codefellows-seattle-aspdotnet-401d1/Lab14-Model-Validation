@@ -11,9 +11,67 @@ h1 {
 
 h2 {
     color: #93EBDD;
+    font-size: 60px;
+    margin-left: 10%;
+}
+
+h3 {
+    font-size: 40px;
+    margin-left: 10%;
 }
 
 h4 {
     color: #93EBDD;
 }
 
+.div {
+    margin-top: 90px;
+    margin-left: 10%;
+}
+
+.button {
+    font-size: 30px;
+    padding: 7px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #93EBDD;
+    background-color: #93EBDD;
+}
+
+a:link {
+    color: #EAEAEA;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #202020;
+}
+
+a:visited {
+    color: #202020;
+    text-decoration: none;
+}
+
+table {
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+th {
+    font-size: 35px;
+    color: #202020;
+    padding: 10px;
+}
+
+td {
+    font-size: 25px;
+    text-align: center;
+}
+
+input {
+    padding-left: 5px;
+    font-size: 30px;
+    border: none;
+    border-radius: 15px;
+}
