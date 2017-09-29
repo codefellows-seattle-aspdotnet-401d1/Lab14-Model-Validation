@@ -1,0 +1,11 @@
+C:\Users\acohr\source\repos\Lab14-Model-Validation\Lab14Validation\bin\Debug\netcoreapp2.0\Lab14Validation.deps.json
+C:\Users\acohr\source\repos\Lab14-Model-Validation\Lab14Validation\bin\Debug\netcoreapp2.0\Lab14Validation.runtimeconfig.json
+C:\Users\acohr\source\repos\Lab14-Model-Validation\Lab14Validation\bin\Debug\netcoreapp2.0\Lab14Validation.runtimeconfig.dev.json
+C:\Users\acohr\source\repos\Lab14-Model-Validation\Lab14Validation\bin\Debug\netcoreapp2.0\Lab14Validation.dll
+C:\Users\acohr\source\repos\Lab14-Model-Validation\Lab14Validation\obj\Debug\netcoreapp2.0\Lab14Validation.csprojResolveAssemblyReference.cache
+C:\Users\acohr\source\repos\Lab14-Model-Validation\Lab14Validation\obj\Debug\netcoreapp2.0\Lab14Validation.csproj.CoreCompileInputs.cache
+C:\Users\acohr\source\repos\Lab14-Model-Validation\Lab14Validation\obj\Debug\netcoreapp2.0\Lab14Validation.AssemblyInfoInputs.cache
+C:\Users\acohr\source\repos\Lab14-Model-Validation\Lab14Validation\obj\Debug\netcoreapp2.0\Lab14Validation.AssemblyInfo.cs
+C:\Users\acohr\source\repos\Lab14-Model-Validation\Lab14Validation\bin\Debug\netcoreapp2.0\Lab14Validation.pdb
+C:\Users\acohr\source\repos\Lab14-Model-Validation\Lab14Validation\obj\Debug\netcoreapp2.0\Lab14Validation.dll
+C:\Users\acohr\source\repos\Lab14-Model-Validation\Lab14Validation\obj\Debug\netcoreapp2.0\Lab14Validation.pdb
