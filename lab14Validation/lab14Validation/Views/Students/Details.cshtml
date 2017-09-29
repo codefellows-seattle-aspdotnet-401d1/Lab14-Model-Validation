@@ -1,54 +1,63 @@
 ﻿@model lab14Validation.Models.Students
-
 @{
     ViewData["Title"] = "Details";
 }
-
-<h2>Details</h2>
-
-<div>
-    <h4>Students</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Grade)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Grade)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Birthdate)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Birthdate)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.GradePntAvg)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.GradePntAvg)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.StudentID)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.StudentID)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>School Page</title>
+    <link rel="stylesheet" href="~/StyleSheet.css">
+    <link rel="stylesheet" href="~/DeleteDetailsStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
+</head>
+<body>
+    <h2>Details</h2>
+    <div>
+        <h4>Students</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.FirstName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.LastName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.LastName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Grade)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Grade)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Birthdate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Birthdate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.GradePntAvg)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.GradePntAvg)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.StudentID)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.StudentID)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a class="button" asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+        <a class="button" asp-action="Index">Back to List</a>
+    </div>
+</body>
+</html>

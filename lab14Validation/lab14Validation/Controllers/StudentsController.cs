@@ -19,9 +19,17 @@ namespace lab14Validation.Controllers
         }
 
         // GET: Students
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Students.ToListAsync());
+            var students = from s in _context.Students
+                         select s;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                students = students.Where(m => m.FirstName.Contains(searchString));
+            }
+
+            return View(await students.ToListAsync());
         }
 
         // GET: Students/Details/5
