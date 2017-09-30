@@ -1,0 +1,11 @@
+C:\Users\Duane Rush\source\repos\Lab14-Model-Validation\Lab14ModelValidation\Lab14ModelValidation\bin\Debug\netcoreapp2.0\Lab14ModelValidation.deps.json
+C:\Users\Duane Rush\source\repos\Lab14-Model-Validation\Lab14ModelValidation\Lab14ModelValidation\bin\Debug\netcoreapp2.0\Lab14ModelValidation.runtimeconfig.json
+C:\Users\Duane Rush\source\repos\Lab14-Model-Validation\Lab14ModelValidation\Lab14ModelValidation\bin\Debug\netcoreapp2.0\Lab14ModelValidation.runtimeconfig.dev.json
+C:\Users\Duane Rush\source\repos\Lab14-Model-Validation\Lab14ModelValidation\Lab14ModelValidation\bin\Debug\netcoreapp2.0\Lab14ModelValidation.dll
+C:\Users\Duane Rush\source\repos\Lab14-Model-Validation\Lab14ModelValidation\Lab14ModelValidation\obj\Debug\netcoreapp2.0\Lab14ModelValidation.csprojResolveAssemblyReference.cache
+C:\Users\Duane Rush\source\repos\Lab14-Model-Validation\Lab14ModelValidation\Lab14ModelValidation\obj\Debug\netcoreapp2.0\Lab14ModelValidation.csproj.CoreCompileInputs.cache
+C:\Users\Duane Rush\source\repos\Lab14-Model-Validation\Lab14ModelValidation\Lab14ModelValidation\obj\Debug\netcoreapp2.0\Lab14ModelValidation.AssemblyInfoInputs.cache
+C:\Users\Duane Rush\source\repos\Lab14-Model-Validation\Lab14ModelValidation\Lab14ModelValidation\obj\Debug\netcoreapp2.0\Lab14ModelValidation.AssemblyInfo.cs
+C:\Users\Duane Rush\source\repos\Lab14-Model-Validation\Lab14ModelValidation\Lab14ModelValidation\bin\Debug\netcoreapp2.0\Lab14ModelValidation.pdb
+C:\Users\Duane Rush\source\repos\Lab14-Model-Validation\Lab14ModelValidation\Lab14ModelValidation\obj\Debug\netcoreapp2.0\Lab14ModelValidation.dll
+C:\Users\Duane Rush\source\repos\Lab14-Model-Validation\Lab14ModelValidation\Lab14ModelValidation\obj\Debug\netcoreapp2.0\Lab14ModelValidation.pdb
