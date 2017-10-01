@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<head>
+    @*<link href="~/StyleSheet.css" rel="stylesheet" type="text/css" />*@
+    <link href="~/Reset.css" rel="stylesheet" type="text/css" />
+    <style>
+        body{
+            width: 960px;
+            margin: 0 auto;
+            text-align:center;
+        }
+        #hero {
+            width: 50%;
+            border-bottom: 4px solid #2fc60b;
+        }
+        .nav li {
+            display: inline-block;
+            width: 150px;
+            height:25px;
+            background-color: #2fc60b;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+            padding-top: 7px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 1em;
+            font-family: Arial;
+            margin: 0.5em;
+            
+        }
+        h1 {
+            font-family: 'Copperplate Gothic';
+            font-size: 3em;
+        }
+        .nav li:hover {
+            background-color: #2ea5d9;
+            color: #e80606;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <h1>School of Rick</h1>
+        <img id="hero" src="~/img/Rick.png" />
+        
+        <ul class="nav">
+            <li><a asp-controller="Register" asp-action="Index">Register</a></li>
+            <li><a asp-controller="Register" asp-action="Index">About</a></li>
+        </ul>
+</body>
+
