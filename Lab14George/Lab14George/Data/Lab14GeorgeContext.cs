@@ -13,6 +13,6 @@ namespace Lab14George.Models
         {
         }
 
-        public DbSet<Lab14George.Models.Student> Student { get; set; }
+        public DbSet<Lab14George.Models.Register> Register { get; set; }
     }
 }

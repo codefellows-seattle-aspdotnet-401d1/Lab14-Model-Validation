@@ -4,6 +4,6 @@ namespace Lab14George.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index() => View();
+        public ViewResult Index() => View();
     }
 }

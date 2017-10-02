@@ -20,22 +20,20 @@ namespace Lab14George.Migrations
                 .HasAnnotation("ProductVersion", "2.0.0-rtm-26452")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Lab14George.Models.Student", b =>
+            modelBuilder.Entity("Lab14George.Models.Register", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("Age");
 
-                    b.Property<string>("Course")
-                        .IsRequired();
+                    b.Property<string>("Course");
 
-                    b.Property<string>("Name")
-                        .IsRequired();
+                    b.Property<string>("Name");
 
                     b.HasKey("ID");
 
-                    b.ToTable("Student");
+                    b.ToTable("Register");
                 });
 #pragma warning restore 612, 618
         }

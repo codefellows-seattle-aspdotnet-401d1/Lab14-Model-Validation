@@ -25,3 +25,10 @@ h3 {
     text-align: center;
     clear: both;
 }
+
+label.control-label{
+    text-align: left;
+}
+input.form-control{
+    text-align: center;
+}

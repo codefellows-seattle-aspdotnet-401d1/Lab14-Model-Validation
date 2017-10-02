@@ -4,6 +4,6 @@ namespace Lab14George.Controllers
 {
     public class ErrorController : Controller
     {
-        public IActionResult Index() => View();
+        public ViewResult Index() => View();
     }
 }

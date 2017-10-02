@@ -9,22 +9,22 @@ using Lab14George.Models;
 
 namespace Lab14George.Controllers
 {
-    public class RegisterController : Controller
+    public class RegistersController : Controller
     {
         private readonly Lab14GeorgeContext _context;
 
-        public RegisterController(Lab14GeorgeContext context)
+        public RegistersController(Lab14GeorgeContext context)
         {
             _context = context;
         }
 
-        // GET: Register
+        // GET: Registers
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Student.ToListAsync());
+            return View(await _context.Register.ToListAsync());
         }
 
-        // GET: Register/Details/5
+        // GET: Registers/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,39 +32,39 @@ namespace Lab14George.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student
+            var register = await _context.Register
                 .SingleOrDefaultAsync(m => m.ID == id);
-            if (student == null)
+            if (register == null)
             {
                 return NotFound();
             }
 
-            return View(student);
+            return View(register);
         }
 
-        // GET: Register/Create
+        // GET: Registers/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Register/Create
+        // POST: Registers/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Age,Course")] Student student)
+        public async Task<IActionResult> Create([Bind("ID,Name,Age,Course")] Register register)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(student);
+                _context.Add(register);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(student);
+            return View(register);
         }
 
-        // GET: Register/Edit/5
+        // GET: Registers/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -72,22 +72,22 @@ namespace Lab14George.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student.SingleOrDefaultAsync(m => m.ID == id);
-            if (student == null)
+            var register = await _context.Register.SingleOrDefaultAsync(m => m.ID == id);
+            if (register == null)
             {
                 return NotFound();
             }
-            return View(student);
+            return View(register);
         }
 
-        // POST: Register/Edit/5
+        // POST: Registers/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Age,Course")] Student student)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Age,Course")] Register register)
         {
-            if (id != student.ID)
+            if (id != register.ID)
             {
                 return NotFound();
             }
@@ -96,12 +96,12 @@ namespace Lab14George.Controllers
             {
                 try
                 {
-                    _context.Update(student);
+                    _context.Update(register);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!StudentExists(student.ID))
+                    if (!RegisterExists(register.ID))
                     {
                         return NotFound();
                     }
@@ -112,10 +112,10 @@ namespace Lab14George.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(student);
+            return View(register);
         }
 
-        // GET: Register/Delete/5
+        // GET: Registers/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -123,30 +123,30 @@ namespace Lab14George.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student
+            var register = await _context.Register
                 .SingleOrDefaultAsync(m => m.ID == id);
-            if (student == null)
+            if (register == null)
             {
                 return NotFound();
             }
 
-            return View(student);
+            return View(register);
         }
 
-        // POST: Register/Delete/5
+        // POST: Registers/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var student = await _context.Student.SingleOrDefaultAsync(m => m.ID == id);
-            _context.Student.Remove(student);
+            var register = await _context.Register.SingleOrDefaultAsync(m => m.ID == id);
+            _context.Register.Remove(register);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool StudentExists(int id)
+        private bool RegisterExists(int id)
         {
-            return _context.Student.Any(e => e.ID == id);
+            return _context.Register.Any(e => e.ID == id);
         }
     }
 }
