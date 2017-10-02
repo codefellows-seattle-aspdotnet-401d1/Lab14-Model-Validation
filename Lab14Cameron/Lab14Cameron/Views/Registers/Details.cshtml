@@ -1,0 +1,54 @@
+﻿@model Lab14Cameron.Models.Register
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Register</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MC)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MC)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Hometown)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Hometown)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeState)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeState)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Albums)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Albums)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstAlbumTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstAlbumTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstAlbum)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstAlbum)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

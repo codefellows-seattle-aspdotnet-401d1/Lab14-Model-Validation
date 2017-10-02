@@ -1,0 +1,76 @@
+﻿@model Lab14Cameron.ViewModel.MCCityViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link href="~/MainSS.css" rel="stylesheet" type="text/css" />
+
+<h1>WELCOME TO THE MC DIRECTORY</h1>
+
+<form asp-controller="Registers" asp-action="index">
+    <p>
+        <select asp-for="mcCity" asp-items="Model.cities">
+            <option value="">ALL</option>
+        </select>
+
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+<p>
+    <a asp-action="Create">REGISTER</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.mcs[0].MC)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.mcs[0].Hometown)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.mcs[0].HomeState)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.mcs[0].Albums)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.mcs[0].FirstAlbumTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.mcs[0].FirstAlbum)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.mcs) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hometown)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HomeState)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Albums)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstAlbumTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstAlbum)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
