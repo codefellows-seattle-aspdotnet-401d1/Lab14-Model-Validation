@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Lab14Cameron.Models.Register>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link href="~/MainSS.css" rel="stylesheet" type="text/css" />
+
+<h1>WELCOME TO THE MC DIRECTORY</h1>
+
+<p>
+    <a asp-action="Create">REGISTER</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.MC)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Hometown)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HomeState)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Albums)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstAlbumTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstAlbum)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hometown)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HomeState)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Albums)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstAlbumTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstAlbum)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
