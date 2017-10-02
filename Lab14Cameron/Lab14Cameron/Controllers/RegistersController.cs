@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Lab14Cameron.Models;
+using Lab14Cameron.ViewModel;
 
 namespace Lab14Cameron.Controllers
 {
@@ -19,9 +20,30 @@ namespace Lab14Cameron.Controllers
         }
 
         // GET: Registers
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string mcCity, string searchString)
         {
-            return View(await _context.Register.ToListAsync());
+            IQueryable<string> cityQuery = from m in _context.Register
+                                            orderby m.Hometown
+                                            select m.Hometown;
+
+            var mcs = from m in _context.Register
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                mcs = mcs.Where(m => m.MC.Contains(searchString));
+            }
+
+            if (!String.IsNullOrEmpty(mcCity))
+            {
+                mcs = mcs.Where(g => g.Hometown == mcCity);
+            }
+
+            var McCityVM = new MCCityViewModel();
+            McCityVM.cities = new SelectList(await cityQuery.Distinct().ToListAsync());
+            McCityVM.mcs = await mcs.ToListAsync();
+
+            return View(McCityVM);
         }
 
         // GET: Registers/Details/5

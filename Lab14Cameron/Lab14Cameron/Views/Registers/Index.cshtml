@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Lab14Cameron.Models.Register>
+﻿@model Lab14Cameron.ViewModel.MCCityViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -7,6 +7,16 @@
 
 <h1>WELCOME TO THE MC DIRECTORY</h1>
 
+<form asp-controller="Registers" asp-action="index">
+    <p>
+        <select asp-for="mcCity" asp-items="Model.cities">
+            <option value="">ALL</option>
+        </select>
+
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
 <p>
     <a asp-action="Create">REGISTER</a>
 </p>
@@ -14,28 +24,28 @@
     <thead>
         <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.MC)
+                    @Html.DisplayNameFor(model => model.mcs[0].MC)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Hometown)
+                    @Html.DisplayNameFor(model => model.mcs[0].Hometown)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.HomeState)
+                    @Html.DisplayNameFor(model => model.mcs[0].HomeState)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Albums)
+                    @Html.DisplayNameFor(model => model.mcs[0].Albums)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.FirstAlbumTitle)
+                    @Html.DisplayNameFor(model => model.mcs[0].FirstAlbumTitle)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.FirstAlbum)
+                    @Html.DisplayNameFor(model => model.mcs[0].FirstAlbum)
                 </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.mcs) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.MC)
