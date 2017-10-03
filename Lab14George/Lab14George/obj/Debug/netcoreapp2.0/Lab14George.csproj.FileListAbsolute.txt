@@ -9,3 +9,14 @@ C:\Users\Georg\source\repos\Lab14-Model-Validation\Lab14George\Lab14George\obj\D
 C:\Users\Georg\source\repos\Lab14-Model-Validation\Lab14George\Lab14George\bin\Debug\netcoreapp2.0\Lab14George.pdb
 C:\Users\Georg\source\repos\Lab14-Model-Validation\Lab14George\Lab14George\obj\Debug\netcoreapp2.0\Lab14George.dll
 C:\Users\Georg\source\repos\Lab14-Model-Validation\Lab14George\Lab14George\obj\Debug\netcoreapp2.0\Lab14George.pdb
+C:\Users\georg\Documents\GitHub\Lab14-Model-Validation\Lab14George\Lab14George\bin\Debug\netcoreapp2.0\Lab14George.deps.json
+C:\Users\georg\Documents\GitHub\Lab14-Model-Validation\Lab14George\Lab14George\bin\Debug\netcoreapp2.0\Lab14George.runtimeconfig.json
+C:\Users\georg\Documents\GitHub\Lab14-Model-Validation\Lab14George\Lab14George\bin\Debug\netcoreapp2.0\Lab14George.runtimeconfig.dev.json
+C:\Users\georg\Documents\GitHub\Lab14-Model-Validation\Lab14George\Lab14George\bin\Debug\netcoreapp2.0\Lab14George.dll
+C:\Users\georg\Documents\GitHub\Lab14-Model-Validation\Lab14George\Lab14George\bin\Debug\netcoreapp2.0\Lab14George.pdb
+C:\Users\georg\Documents\GitHub\Lab14-Model-Validation\Lab14George\Lab14George\obj\Debug\netcoreapp2.0\Lab14George.csprojResolveAssemblyReference.cache
+C:\Users\georg\Documents\GitHub\Lab14-Model-Validation\Lab14George\Lab14George\obj\Debug\netcoreapp2.0\Lab14George.csproj.CoreCompileInputs.cache
+C:\Users\georg\Documents\GitHub\Lab14-Model-Validation\Lab14George\Lab14George\obj\Debug\netcoreapp2.0\Lab14George.AssemblyInfoInputs.cache
+C:\Users\georg\Documents\GitHub\Lab14-Model-Validation\Lab14George\Lab14George\obj\Debug\netcoreapp2.0\Lab14George.AssemblyInfo.cs
+C:\Users\georg\Documents\GitHub\Lab14-Model-Validation\Lab14George\Lab14George\obj\Debug\netcoreapp2.0\Lab14George.dll
+C:\Users\georg\Documents\GitHub\Lab14-Model-Validation\Lab14George\Lab14George\obj\Debug\netcoreapp2.0\Lab14George.pdb
