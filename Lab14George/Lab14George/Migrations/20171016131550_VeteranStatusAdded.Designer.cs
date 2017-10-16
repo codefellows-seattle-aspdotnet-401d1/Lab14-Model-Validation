@@ -11,9 +11,10 @@ using System;
 namespace Lab14George.Migrations
 {
     [DbContext(typeof(Lab14GeorgeContext))]
-    partial class Lab14GeorgeContextModelSnapshot : ModelSnapshot
+    [Migration("20171016131550_VeteranStatusAdded")]
+    partial class VeteranStatusAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
