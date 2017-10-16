@@ -12,5 +12,6 @@ namespace Lab14George.Models
         public int Age { get; set; }
         [Required(ErrorMessage = "Course is required")]
         public string Course { get; set; }
+        public bool VeteranStatus { get; set; }
     }
 }
